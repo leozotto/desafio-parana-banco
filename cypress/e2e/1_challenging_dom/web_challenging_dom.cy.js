@@ -2,7 +2,7 @@
 describe('Desafio UI - challenging_dom', () => {
   beforeEach(() => {
     cy.visit('https://the-internet.herokuapp.com/challenging_dom');
-    cy.log('🔄 Página carregada com sucesso');
+    cy.log('Página carregada com sucesso');
   });
 
   it('Deve clicar nos 3 botões principais (por classes fixas)', () => {
