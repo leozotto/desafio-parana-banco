@@ -16,8 +16,8 @@ Este projeto contém testes automatizados utilizando Cypress para validar:
 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/leozotto/desafio-parana-banco
+cd desafio-parana-banco
 ```
 
 2. Instale as dependências
@@ -47,4 +47,4 @@ As URLs base estão configuradas no arquivo `cypress.config.js`:
 
 ## Contato
 
-Leonardo Maia – seu-email@example.com
+Leonardo Zotto da Maia - leozotto@hotmail.com
