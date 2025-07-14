@@ -1,0 +1,105 @@
+Desafio Técnico - Paraná Banco 
+Leonardo Zotto da Maia 
+
+1.1 Como você iniciaria uma estratégia de teste? 
+Dado que o projeto está sendo construído do zero, iniciaria com uma abordagem 
+estruturada e colaborativa, com foco em qualidade desde as etapas iniciais: 
+    ● Entendimento do negócio: Participaria de reuniões com o cliente e o time 
+de produto para compreender as dores dos mesmo, regras de negócio, fluxos 
+principais (compra, simulação, financiamento no caso do Paraná Banco) e iria 
+mapear os riscos. 
+    ● Definição da estratégia de testes: Elaboraria um plano com os objetivos de 
+teste, tipos de teste aplicáveis por camada (unitário, integração, E2E), 
+critérios de aceite, escopo, dados e ambientes. 
+    ● Alinhamento técnico com arquitetura e desenvolvimento: Validaria fluxos 
+entre microsserviços, autenticação, eventos assíncronos e integração com 
+sistemas externos para antecipar falhas e dependências. 
+    ● Definição de padrões de automação: Definiria as tecnologias utilizadas na 
+equipe, estruturaria o repositório de automação com boas práticas, 
+organização de código, uso de dados e integração contínua desde os 
+primeiros sprints. 
+
+
+1.2 Quais abordagens de teste você consideraria? 
+Considerando a arquitetura baseada em microsserviços, grande volume de 
+transações e integração com sistemas externos, adotaria as seguintes abordagens: 
+    ● Testes Funcionais (E2E) 
+Utilizaria automação com Cypress e Selenium para validar os principais 
+fluxos de ponta a ponta, como simulação de financiamento, busca e compra 
+de imóveis. 
+    ● Testes de Integração/API 
+Validação de comunicação entre microsserviços e consumo de APIs 
+externas com foco em status, headers, autenticação, validação de payloads e 
+tratamento de falhas. 
+    ● Testes de Performance 
+Utilizaria K6 ou Jmeter para realizar testes de carga e estresse sobre APIs 
+críticas e fluxos com alta concorrência. 
+    ● Testes Exploratório e de Usabilidade 
+Nos primeiros ciclos de desenvolvimento, complementaria com validações 
+manuais e exploração de funcionalidades novas ou instáveis. 
+
+
+1.3 Como você trabalharia com diferentes tipos/níveis de teste? 
+Trabalharia com uma pirâmide de testes adaptada à arquitetura de microsserviços: 
+
+    ● Testes de Unidade 
+Responsabilidade do time de desenvolvimento. Apoio com padrões de testes, TDD, 
+e validações de regras de negócio. 
+    ● Testes de Integração 
+Foco na interação entre microsserviços, com dados consistentes e validação de 
+dependências externas, tratamento de erros e consistência. 
+    ● Testes de API 
+Automatizados com Cypress ou Postman/Swagger/SOAP UI, valendo-se da 
+estrutura REST. Validação de contratos, status codes, e performance dos endpoints. 
+    ● Testes E2E e UI 
+Automação com Cypress (JavaScript) e Selenium (Java ou C#), com foco em 
+jornadas críticas e regressão contínua. 
+    ● Testes de Performance 
+Com K6 e JMeter, aplicados em endpoints críticos e ambientes controlados. 
+Simulação de alto volume simultâneo em múltiplas regiões. 
+    ● Testes Manuais 
+Aplicados de forma exploratória ou como apoio à homologação de features novas 
+ou sensíveis. E executaria os testes assim que as features fossem desenvolvidas, 
+antes de passarem direto para a etapa de automação. 
+
+
+1.4 Quais ferramentas você consideraria usar? 
+As ferramentas seriam escolhidas de acordo com o contexto técnico do time, mas 
+priorizando aquelas que já possuo experiência: 
+
+Ferramentas Utilizadas :
+Automação Web/API 
+    ● Cypress (JavaScript), Selenium (Java/C#) 
+
+Testes de Performance 
+    ● K6, JMeter. 
+
+CI/CD 
+    ● Jenkins, GitHub Actions, GitLab CI. 
+
+Gerenciamento de Testes 
+    ● Jira, Azure DevOps. 
+
+Versionamento de Código 
+    ● GitHub, GitLab. 
+
+Integração com Desenvolvimento 
+    ● Azure DevOps, pipelines automatizados. 
+
+Também priorizaria a criação de pipelines automatizados para execução dos testes 
+em Pull Requests, builds e ambientes de homologação. 
+
+
+1.5 Como você se imagina atuando nessa equipe? 
+Atuaria como um pilar técnico e estratégico da qualidade, com ações que vão além 
+da automação: 
+    ● Participação ativa desde o discovery para mapear cenários críticos, riscos 
+e requisitos não funcionais. 
+    ● Liderança técnica em qualidade, guiando decisões sobre frameworks, 
+ferramentas e arquitetura de testes. 
+    ● Criação de frameworks reutilizáveis para automação eficiente e 
+sustentável a longo prazo. 
+    ● Mentoria e suporte ao time, promovendo boas práticas de testes, 
+pareamento técnico e cultura de qualidade contínua. 
+    ● Integração com DevOps e produto, garantindo visibilidade de métricas, 
+rastreabilidade de defeitos, e entregas com previsibilidade e segurança. 
